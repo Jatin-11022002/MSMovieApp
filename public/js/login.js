@@ -1,4 +1,4 @@
-const BASE_URL = 'https://msmovieapp.herokuapp.com';
+const BASE_URL = 'https://jatin-11022002.github.io/MSMovieApp';
 var tagArray = [];
 function switchForm(className, e) {
 	e.preventDefault();
