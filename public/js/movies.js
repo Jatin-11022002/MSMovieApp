@@ -1,5 +1,5 @@
 const token = localStorage.getItem('token')
-const BASE_URL = 'https://jatin-11022002.github.io/MSMovieApp';
+const BASE_URL = 'http://localhost:3000';
 const HOME_URL = BASE_URL + '/movies/home?email=admin123';
 const delay = 300;
 const main = document.getElementById('main');

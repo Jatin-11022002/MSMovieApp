@@ -89,7 +89,7 @@ for(var i in usertags){
     fetchMoviesByEntity:async function (clause,page){
       
       var map=[];
-        try{  var query = `SELECT distinct movieid ,name,path,liked,watched ,overview
+        try{  var query = `SELECT distinct id ,name,path,liked,watched ,overview
         FROM trends ,m2m_movie_trends,movie where m2m_movie_trends.movieid = movie.id and m2m_movie_trends.tag = trends.tag and ${clause} order by liked desc,watched desc offset ${(page*tagpagesize)-tagpagesize} rows fetch next ${page*tagpagesize-1} rows only`
       var result = await sql.query(query);
       if(result.recordset.length>0)

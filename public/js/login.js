@@ -1,4 +1,4 @@
-const BASE_URL = 'https://jatin-11022002.github.io/MSMovieApp';
+const BASE_URL = 'http://localhost:3000';
 var tagArray = [];
 function switchForm(className, e) {
 	e.preventDefault();
