@@ -1,0 +1,10 @@
+{
+    "dev": {
+      "driver": "mysql",
+      "host": "localhost",
+      "port": "1433",
+      "user": "sa",
+      "password": "jatin",
+      "database": "sample"
+    }
+  }

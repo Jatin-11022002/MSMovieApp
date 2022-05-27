@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+    --light-blue: #B6C6FF;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+.home {
+    align-self: center;
+    color:white;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+label {
+    color: #fff;
+}
+
+.filter,
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #fff;
+    font-family: inherit;
+}
+
+.filter:focus,
+.search:focus {
+    outline: 0;
+    background-color: var(--primary-color);
+}
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: ; */
+}
+
+.tag {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--secondary-color);
+    color: #eee;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 25px;
+
+}
+
+.btn {
+    padding: 6px;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: none;
+    font-weight: 500;
+    background: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.show-more:hover {
+    background: var(--light-blue);
+}
+
+.movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin-top: 0;
+}
+
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: lightgreen;
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: red;
+}
+
+.overview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translateY(0)
+}
+
+.card-wrapper {
+   
+    margin: 0 auto;
+    display: inline-flex;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.img-display {
+    overflow: hidden;
+}
+
+.img-showcase {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.img-showcase img {
+    min-width: 100%;
+}
+
+.img-select {
+    display: flex;
+}
+
+.product-detail {
+    color: white;
+    padding: 40px;
+}
+ span {
+  
+    font-weight:400px;
+    
+ }
+.product-detail p {
+  
+   font-weight:bold
+}
+
+.description {
+    max-width: 500px;
+}
+
+
+.tag-list {
+    background: var(--secondary-color);
+    margin: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 6px;
+    width: fit-content;
+    color: #F4F2FF;
+    padding: 4px;
+    cursor: pointer;
+}
+.like {
+width: 60px;
+}
+
+#pagination{
+	width: 100%;
+	float: left;
+	padding:15px;
+	text-align: center;
+}
+#pagination div{
+	display: inline-block;
+	margin:0 10px;
+    font-weight: 500px;
+}
+#pagination .page{
+	color:white;
+}
+#pagination #prev,#pagination #next{
+ color:white;
+ border:1px solid white;
+ border-radius: 50%;
+ font-size:15px;
+ padding:7px 15px;
+ cursor: pointer;
+}
+#prev:hover, #next:hover{
+    color:var(--secondary-color);
+    background-color: white;
+}
+
+#pagination #prev.disabled,
+ #pagination #next.disabled{
+	border-color: black;
+	color:black;
+	pointer-events: none;
+}
+.toggle-display {
+    display:none;
+}
+#loader{
+    font-size: xxx-large;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}

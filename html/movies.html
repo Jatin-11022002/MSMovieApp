@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/movies.css">
+    <title>Movie App</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="home" onclick="showHome()">Home</div>
+        <div>
+            <label for="filter">Search by</label>
+            <select name="filter" id="filter" class="search">
+                <option value="tags">Tags</option>
+                <option value="movies" selected>Movies</option>
+            </select>
+            <input type="text" placeholder="Search" id="search" class="search">
+            <button class ="logout btn" id="logout">Log out</button>
+        </dix>
+    </header>
+<div id = "loader" class = "toggle-display">Loading ...</div>
+    <main id="main">
+        
+    </main>
+    <div id="pagination"class ="toggle-display">
+
+    </div>
+
+    <script src="../js/movies.js"></script>
+</body>
+
+</html>
