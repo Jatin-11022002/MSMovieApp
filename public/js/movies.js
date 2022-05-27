@@ -1,4 +1,3 @@
-const API_KEY = 'api_key=1cf50e6248dc270629e802686245c2c8';
 const token = localStorage.getItem('token')
 const BASE_URL = 'https://msmovieapp.herokuapp.com';
 const HOME_URL = BASE_URL + '/movies/home?email=admin123';
@@ -261,7 +260,7 @@ var logout = document.getElementById('logout')
 logout.addEventListener('click', (e) => {
     e.preventDefault();
 localStorage.removeItem('token');
-window.location.replace("login.html");
+window.location.href =  `${BASE_URL}\\`
 
 })
 function loading(flag){

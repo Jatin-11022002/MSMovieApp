@@ -117,5 +117,11 @@ router.post('/movie/like', async (req, res) => {
         status: 'success',
     })
 })
+router.get('/', async (req, res) => {
+    
+    return res.render('movies',{
+        status: 'success',
+    })
+})
 
 module.exports = router;

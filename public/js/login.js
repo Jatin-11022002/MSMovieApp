@@ -161,7 +161,7 @@ if (result.status === 'success') {
 if (result.status === 'success') {
     // everythign went fine
     localStorage.setItem('token',result.token);
-    window.location.replace("movies.html");
+    window.location.href = `${BASE_URL}/movies/`;
   //  alert(result.token)
    // switchForm('login',e);
 } else {
