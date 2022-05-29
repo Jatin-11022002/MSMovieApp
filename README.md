@@ -1,12 +1,13 @@
 # MSMovieApp
-MSMovieApp runs on localhost 
-so BY default  website is configured for http://localhost:3000
-#To start the server and resolve nodejs dependency
+MSMovieApp runs on localhost <br/>
+so BY default  website is configured for http://localhost:3000 <br/>
+# To start the server and resolve nodejs dependency
 - Execute this command
  	- yarn install
  	- npm start
 -  Port , host url changes if not on localhost, if using localhost plese verify these changes
 if port or host needs to changed then needfull changes are:-
+
 | FileName            | changes in file     |
 | ------------------- | ------------------- |
 | .env        	      | APP_BASE_URL , PORT |
@@ -30,20 +31,21 @@ if port or host needs to changed then needfull changes are:-
  
 ## IF new data need to be added
 - Method : POST
-- API :  {<host>:<PORT>}/movies/newmovie
-- BODY:  
-- data: { {
-	"name":“movie name",
-	"release_date": “yyyy-mm-dd",
-	"genre": “genre",
-	"country":“country name",
-	"overview":“xyz.",
-	"tags":[“tag1",“tag2",“tag3",“tag4",“tag5"]
-	} }
-- movie: <select files>
-Note:-
- format of body need to be strictly followed,
-Any escape character used while adding data requires ‘\’ for API to accept it
-![image](https://user-images.githubusercontent.com/92532559/170766355-4afcb7dd-a94f-449e-8b34-ee23561658a2.png)
+- API :  `http://<host>:<port>/movies/newmovie`
+- BODY:  data: { { <br/>
+	"name":“movie name", <br/>
+	"release_date": “yyyy-mm-dd", <br/>
+	"genre": “genre", <br/>
+	"country":“country name",<br/>
+	"overview":“xyz.", <br/>
+
+	"tags":[“tag1",“tag2",“tag3",“tag4",“tag5"] 
+	} } <br/>
+	movie: `<select files>` <br/>
+Note:- <br/>
+ format of body need to be strictly followed,<br/>
+Any escape character used while adding data requires ‘\’ for API to accept it <br/>
+
 ![image](https://user-images.githubusercontent.com/92532559/170766421-7d90c9fc-0f8e-48e8-8e9f-6faa71892d88.png)
+![Screenshot (324)](https://user-images.githubusercontent.com/92532559/170857492-62582b0d-c2ee-4d52-a9b7-11dc28e91286.png)
 
