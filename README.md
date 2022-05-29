@@ -7,10 +7,11 @@ so BY default  website is configured for http://localhost:3000
  	- npm start
 -  Port , host url changes if not on localhost, if using localhost plese verify these changes
 if port or host needs to changed then needfull changes are:-
-FileName                   changes in file
-- .env                      APP_BASE_URL , PORT
-- public/js/login.js        BASE_URL
-- public/js/movies.js      BASE_URL
+| FileName            | changes in file     |
+| ------------------- | ------------------- |
+| .env        	      | APP_BASE_URL , PORT |
+| public/js/login.js  |  BASE_URL           |
+| public/js/movies.js |  BASE_URL           |
 
 ## MSSQL server database is Used which is hosted on azure
 - after doing "npm start or node server.js " if unable to see "db connected" log on console please add your client ip in the azure databse firewall rules
