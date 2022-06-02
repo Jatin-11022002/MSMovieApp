@@ -13,7 +13,7 @@ if port or host needs to changed then needfull changes are:-
 | .env        	      | APP_BASE_URL , PORT |
 | public/js/login.js  |  BASE_URL           |
 | public/js/movies.js |  BASE_URL           |
-
+## ---------------------------------- Database Setup -------------------------------------
 ## MSSQL server database is Used which is hosted on azure
 - after doing "npm start or node server.js " if unable to see "db connected" log on console please add your client ip in the azure databse firewall rules
 - azure credential if client is unable to access
@@ -23,7 +23,18 @@ if port or host needs to changed then needfull changes are:-
 	-  dbname: msmoviedb
 
 - after doing needful changes do "npm start"
-
+## OR
+## If azure services are expired due to credits on azure service ended (student account - 25% left updated on 2-june)
+- Then please setup a local sql server
+- Update  user ,password ,server details in ".env" file .
+- import "msmoviedb.bacpac"(avalaible in source code) file into the local setup.
+- Follow following details to import
+	- Navigate to local database setup 
+	- right click on databases and import as data-tier application
+	- choose "msmoviedb.bacpac" and do next and finish 
+	- and database is ready
+- after doing needful changes do "npm start"
+## -------------------------------- Database setup end ------------------------------
 ## Website Entry point
  Entry point for website is
  	- http://localhost:3000/
