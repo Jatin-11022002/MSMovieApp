@@ -27,7 +27,7 @@ if port or host needs to changed then needfull changes are:-
 ## If azure services are expired due to credits on azure service ended (student account - 25% left updated on 2-june)
 - Then please setup a local sql server
 - Update  user ,password ,server details in ".env" file .
-- import "msmoviedb.bacpac"(avalaible in source code) file into the local setup.
+- import "msmoviedb.bacpac"(avalaible in source code) file into the local sql server.
 - Follow following details to import
 	- Navigate to local database setup 
 	- right click on databases and import as data-tier application
